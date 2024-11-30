@@ -99,43 +99,51 @@
     </header>
     
     <!-- end header section -->
-
-  <!-- client section -->
-   <section class="community layout-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-lg-3 mb-2">
-          <div class="menu flex-row justify-content-between align-items-center">
-            NuGiBot
-            <icon class="material-symbols-outlined" onclick="toggleMenu()">menu</icon>
-          </div>
-          <nav class="nav flex-column sidebar" id="sidebar">
-            <a href="" class="nugibot-btn">NuGiBot</a>
-            <a href="" class="nav-link  d-flex align-items-center">
-              <icon  class="mr-2 material-symbols-outlined">description</icon>
-              Healty News
+    
+    <!-- client section -->
+    <section class="community layout-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-lg-3 mb-2">
+            <div class="menu flex-row justify-content-between align-items-center">
+              NuGiBot
+              <icon class="material-symbols-outlined" onclick="toggleMenu()">menu</icon>
+            </div>
+            <nav class="nav flex-column sidebar" id="sidebar">
+            <a href="" class="nugibot-btn">Community</a>
+            <a href="community.html" class="nav-link d-flex align-items-center active">
+              <icon  class="mr-2 material-symbols-outlined">home</icon>
+              For You
             </a>
+            <a href="vegan.html" class="nav-link d-flex align-items-center active">
+              <icon  class="mr-2 material-symbols-outlined">spa</icon>
+              Vegan
+            </a>
+            <a href="diet.html" class="nav-link d-flex align-items-center active">
+              <icon  class="mr-2 material-symbols-outlined">no_meals</icon>
+              Diet
+            </a>
+            <a href="" class="nugibot-btn">NuGiBot</a>
             <a href="chatbot.html" class="nav-link  d-flex align-items-center">
               <icon  class="mr-2 material-symbols-outlined">chat_bubble</icon>
               Chat with NuGiBOT
             </a>
-            <a href="" class="nugibot-btn">Community</a>
-            <a href="" class="nav-link d-flex align-items-center active">
-              <icon  class="mr-2 material-symbols-outlined">home</icon>
-              For You
+            <a href="" class="nav-link  d-flex align-items-center">
+              <icon  class="mr-2 material-symbols-outlined">show_chart</icon>
+              Report Progress
             </a>
             <a href="" class="nav-link  d-flex align-items-center">
-              <icon  class="mr-2 material-symbols-outlined">explore</icon>
-              Explore
+              <icon  class="mr-2 material-symbols-outlined">bar_chart</icon>
+              Food Track
             </a>
-            <a href="" class="nugibot-btn">My Group</a>
             <a href="" class="nav-link  d-flex align-items-center">
-              <icon  class="mr-2 material-symbols-outlined">groups</icon>
-              Group 1
+              <icon  class="mr-2 material-symbols-outlined">date_range</icon>
+              Reminder
             </a>
           </nav>
         </div>
-        
+        <!-- end section -->
+         <!-- start content -->
         <div class="col-md-8 col-lg-6 main-community px-2 py-4">
           <div class="container">
             <div class="row">
@@ -209,36 +217,39 @@
                     </div> 
                   </div>
                   <div class="container">
-                    <div class="d-flex flex-row align-items-start justify-content-between">
-                      <div class="d-flex flex-row align-items-start w-100">
-                        <div class="circle-picture-comment">
-                          <icon class="material-symbols-outlined">person</icon>
-                        </div>
-                        <div class="flex-column">
-                          <h5 class="mx-2" style="font-size: .9rem;">John Doe</h5>
-                          <p class="mx-2" style="font-size: .9rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae</p>
-                          <div class="d-flex flex-row">
-                            <icon class="material-symbols-outlined" id="love-icon-1.2">favorite</icon>
-                            <p class="mx-2" style="font-size: .9rem;" id="like-count-1.2">4 likes</p>
+                    <div id="comments-section">
+                      <div class="d-flex flex-row align-items-start justify-content-between">
+                        <div class="d-flex flex-row align-items-start w-100">
+                          <div class="circle-picture-comment">
+                            <icon class="material-symbols-outlined">person</icon>
+                          </div>
+                          <div class="flex-column">
+                            <h5 class="mx-2" style="font-size: .9rem;">John Doe</h5>
+                            <p class="mx-2" style="font-size: .9rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae</p>
+                            <div class="d-flex flex-row">
+                              <icon class="material-symbols-outlined" id="love-icon-1.2">favorite</icon>
+                              <p class="mx-2" style="font-size: .9rem;" id="like-count-1.2">4 likes</p>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="d-flex flex-column justify-content-end align-items-end w-50">
-                        <p style="font-size: .9rem;">3 Months</p>
-                        <icon class="material-symbols-outlined">more_vert</icon>
-                      </div>
-                    </div> 
-                  </div>
-                </div>
-                <div class="container mt-3">
-                  <form id="comment-form" class="d-flex">
-                    <div class="form-group flex-grow-1">
-                      <label for="comment" style="font-size: .9rem; font-weight: 500;">Add a Comment</label>
-                      <div class="d-flex align-items-center">
-                        <textarea style="border-radius: 20px;" class="form-control flex-grow-1" id="comment" rows="1" placeholder="Write your comment here..." oninput="adjustTextareaHeight(this)" style="resize: none;"></textarea>
-                        <button type="submit" class="btn btn-submit ml-2"><icon class="material-symbols-outlined">send</icon></button>
-                      </div>
+                        <div class="d-flex flex-column justify-content-end align-items-end w-50">
+                          <p style="font-size: .9rem;">3 Months</p>
+                          <icon class="material-symbols-outlined">more_vert</icon>
+                        </div>
+                      </div> 
                     </div>
+                  </div>
+                  <div class="container mt-3">
+                    <form id="comment-form" class="d-flex">
+                      <div class="form-group flex-grow-1">
+                        <label for="comment" style="font-size: .9rem; font-weight: 500;">Add a Comment</label>
+                        <div class="d-flex align-items-center">
+                          <textarea style="border-radius: 20px;" class="form-control flex-grow-1" id="comment" rows="1" placeholder="Write your comment here..." oninput="adjustTextareaHeight(this)" style="resize: none;"></textarea>
+                          <button type="submit" class="btn btn-submit ml-2"><icon class="material-symbols-outlined">send</icon></button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>                  
                   </form>
                 </div>                
               </div>
@@ -414,6 +425,54 @@
   <script src="js/custom.js"></script>
 
   <script>
+document.getElementById('comment-form').addEventListener('submit', function(event) {
+
+  
+  var loveIcons = [
+        { icon: document.getElementById("love-icon"), count: document.getElementById("like-count-1"), showLikesText: false }
+];
+  event.preventDefault(); // Mencegah form dari submit default
+
+  var commentInput = document.getElementById('comment');
+  var commentText = commentInput.value.trim(); // Ambil teks dari textarea
+
+  if (commentText !== '') {
+    var commentSection = document.getElementById('comments-section');
+    var newComment = document.createElement('div'); // Membuat elemen div baru untuk komentar
+    newComment.className = 'd-flex flex-row align-items-start justify-content-between'; // Tambahkan kelas CSS yang sesuai
+
+    newComment.innerHTML = `
+      <div class="d-flex flex-row align-items-start w-100">
+        <div class="circle-picture-comment">
+          <icon class="material-symbols-outlined">person</icon>
+        </div>
+        <div class="flex-column">
+          <h5 class="mx-2" style="font-size: .9rem;">Your Name</h5>
+          <p class="mx-2" style="font-size: .9rem;">${commentText}</p>
+          <div class="d-flex flex-row">
+            <icon class="material-symbols-outlined">favorite</icon>
+            <p class="mx-2" style="font-size: .9rem;">0 likes</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column justify-content-end align-items-end w-50">
+        <p style="font-size: .9rem;">Just now</p>
+        <icon class="material-symbols-outlined">more_vert</icon>
+      </div>
+    `;
+
+    commentSection.appendChild(newComment); // Tambahkan komentar baru ke komentar section
+
+    commentInput.value = ''; // Bersihkan textarea setelah menambahkan komentar
+  }
+});
+
+function adjustTextareaHeight(textarea) {
+  textarea.style.height = 'auto'; // Reset height untuk menghitung ulang
+  textarea.style.height = (textarea.scrollHeight) + 'px'; // Set height berdasarkan konten
+}
+
+    
     function toggleComments() {
       const arrowComment = document.getElementById("arrow-comment");
       const comments = document.getElementById("comments");
