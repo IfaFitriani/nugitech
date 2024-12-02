@@ -355,7 +355,7 @@
                   data: filteredData.map((item) => item[dataType]),
                   borderColor: "rgba(75, 192, 192, 1)",
                   backgroundColor: "rgba(75, 192, 192, 0.2)",
-                  borderWidth: 2,
+                  borderWidth: 3,
                   fill: true,
                   tension: 0.4,
                 },
@@ -428,7 +428,7 @@
                 filterData();
                 const chartTitle = document.getElementById("chartTitle");
                 chartTitle.innerHTML = '';
-                chartTitle.innerHTML = `Grafik ${document.getElementById("dataType").value.charAt(0).toUpperCase() + document.getElementById("dataType").value.slice(1)}`;
+                chartTitle.innerHTML = `${document.getElementById("dataType").value.charAt(0).toUpperCase() + document.getElementById("dataType").value.slice(1)} Chart`;
               }
             );
             document.getElementById("timeRange").addEventListener("change", filterData);
