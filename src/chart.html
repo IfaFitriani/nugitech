@@ -278,7 +278,7 @@
               class="col-xl-8 col-lg-3 col-md-2 col-sm-10"
               style="margin-top: 0px; left: -85px; margin-bottom: 20px"
             >
-              <div style="border: 1px solid; border-radius: 10px; width: 125%">
+              <div style="border: 1px solid var(--primary1); border-radius: 10px; width: 125%">
                 <div class="card-body" style="border-radius: 30px">
                   <h3 style="font-family: cursive" id="chartTitle">Calories Chart</h3>
                   <form id="filterForm" class="d-flex align-items-center gap-2">
@@ -290,7 +290,7 @@
                           <option value="protein">Protein</option>
                           <option value="sugar">Sugar</option>
                           <option value="fiber">Fiber</option>
-                          <option value="carbohydrate">carbohydrate</option>
+                          <!-- <option value="carbohydrate">carbohydrate</option> -->
                         </select>
                       </div>
                       <div class="col-md-3 col-sm-12">
@@ -311,7 +311,7 @@
                         />
                       </div>
                       <div class="col-md-3 col-sm-12">
-                        <label for="endDate">To:</labe  l>
+                        <label for="endDate">To:</label>
                         <input type="date" id="endDate" class="form-control" style="margin: 0;" />
                       </div>
                     </div>
@@ -351,7 +351,7 @@
               const labels = filteredData.map((item) => formatDate(item.tanggal));
               const datasets = [
                 {
-                  label: `Grafik ${dataType.charAt(0).toUpperCase() + dataType.slice(1)}`,
+                  label: `${dataType.charAt(0).toUpperCase() + dataType.slice(1)}`,
                   data: filteredData.map((item) => item[dataType]),
                   borderColor: "rgba(75, 192, 192, 1)",
                   backgroundColor: "rgba(75, 192, 192, 0.2)",
@@ -489,8 +489,8 @@
                   class="row d-flex align-items-center justify-content-between"
                 >
                   <div class="col-10">
-                    <div class="card-1-body mb-3">Batas Kalorimu Bulan Ini</div>
-                    <div class="card-1-footer">75000 Kkal</div>
+                    <div class="card-1-body mb-3">Your calories limit this month</div>
+                    <div class="card-1-footer">75000 KCal</div>
                   </div>
                   <div class="col-2" style="left: -20px">
                     <div class="card-1-body">
@@ -515,8 +515,8 @@
                   class="row d-flex align-items-center justify-content-between"
                 >
                   <div class="col-10">
-                    <div class="card-1-body mb-3">Total Kalorimu Hari Ini</div>
-                    <div class="card-1-footer">75000 Kkal</div>
+                    <div class="card-1-body mb-3">Your total calories today</div>
+                    <div class="card-1-footer">75000 KCal</div>
                   </div>
                   <div class="col-2" style="left: -20px">
                     <div class="card-1-body">
@@ -541,8 +541,8 @@
                   class="row d-flex align-items-center justify-content-between"
                 >
                   <div class="col-10">
-                    <div class="card-1-body mb-3">Batas Kalorimu Hari Ini</div>
-                    <div class="card-1-footer">75000 Kkal</div>
+                    <div class="card-1-body mb-3">Your Calorie Limit Today</div>
+                    <div class="card-1-footer">75000 KCal</div>
                   </div>
                   <div class="col-2" style="left: -20px">
                     <div class="card-1-body">
@@ -558,7 +558,7 @@
             </div>
           </div>
           <h3 style="font-family: cursive; margin-top: 20px">
-            REKOMENDASI PENGURANGAN KALORI
+            CALORIE REDUCTION RECOMMENDATIONS
           </h3>
           <div class="row">
             <!-- Chart Wrapper 1 -->
@@ -572,12 +572,12 @@
                 >
                   <div class="col-10">
                     <div class="card-1-body mb-3">
-                      Rekomendasi Total Kalori Harian
+                      Recommended Total Daily Calories
                     </div>
                     <div class="card-1-footer">
-                      Cobalah menambah aktivitas fisik untuk menjaga
-                      keseimbangan kalori harian dan mencapai tujuan bulanan
-                      Anda.
+                      Try increasing physical activity to maintain
+                      balance daily calories and achieve monthly goals
+                      You.
                     </div>
                   </div>
                 </div>
@@ -595,11 +595,11 @@
                 >
                   <div class="col-10">
                     <div class="card-1-body mb-3">
-                      Rekomendasi Batas Kalori Harian
+                      Recommended Daily Calorie Limits
                     </div>
                     <div class="card-1-footer">
-                      Tetap perhatikan asupan kalori, pilih makanan rendah
-                      kalori untuk menjaga angka tetap ideal.
+                      Still pay attention to calorie intake, choose low-calorie foods
+                      calories to maintain ideal numbers.
                     </div>
                   </div>
                 </div>
@@ -620,13 +620,13 @@
                 >
                   <div class="col-10">
                     <div class="card-1-body mb-3">
-                      Rekomendasi Total Kalori Bulanan
+                      Recommended Total Monthly Calories
                     </div>
                     <div class="card-1-footer">
-                      Untuk menjaga kalori tetap terkontrol, pastikan bahwa
-                      aktivitas fisik Anda mencakup latihan ringan seperti jalan
-                      kaki atau yoga 30 menit per hari untuk membakar lebih
-                      banyak kalori.
+                      To keep calories under control, make sure that
+                      Your physical activity includes light exercise such as walking
+                      legs or yoga 30 minutes per day to burn more
+                      lots of calories.
                     </div>
                   </div>
                 </div>
@@ -647,12 +647,12 @@
                 >
                   <div class="col-10">
                     <div class="card-1-body mb-3">
-                      Rekomendasi Batas Kalori Bulanan
+                      Recommended Monthly Calorie Limits
                     </div>
                     <div class="card-1-footer">
-                      Fokus pada makanan sehat (sayuran, protein tanpa lemak)
-                      dan hindari makanan olahan tinggi gula dan lemak. Selalu
-                      gunakan NuGiBot untuk melacak dan menjaga asupan anda.
+                      Focus on healthy foods (vegetables, lean protein)
+                      and avoid processed foods high in sugar and fat. Always
+                      use NuGiBot to track and maintain your intake.
                     </div>
                   </div>
                 </div>
